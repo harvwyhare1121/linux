@@ -1,0 +1,12 @@
+{
+  "name": "VNC Codespace",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "runArgs": [
+    "--init"
+  ],
+  "forwardPorts": [3389, 5902],
+  "postCreateCommand": "echo 'Codespace is ready with VNC support!'",
+  "remoteUser": "testuser"
+}
